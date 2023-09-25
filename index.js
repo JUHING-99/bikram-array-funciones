@@ -54,15 +54,15 @@ function obtenerPares(arr){
 
 //12
 function pintarArray(arr){
-    let resultado = arr.toString();
+    let resultado = "[" + arr.join(', ') + "]"
     return resultado;
-} // no entiendo por qué me da error en este?
+} 
 
 //13
 function arrayMapi(arr,myFunction){
-    let newArr = arr.map(myFunction())
+    let newArr = arr.map((e)=>myFunction(e))
       return newArr
-  } //este no lo entiendo
+  } 
 
 //14
 function eliminarDuplicados(arr){
