@@ -66,10 +66,15 @@ function arrayMapi(arr,myFunction){
 
 //14
 function eliminarDuplicados(arr){
-    const simple = new Set(arr);
-    let resultado = [simple];
+    let resultado =[]
+    for(let i=0;i<arr.length;i++){
+        if(resultado.includes(arr[i]) == false){
+            resultado.push(arr[i])
+        } 
+    }
     return resultado
-   }
+    }
+
 
 //15
 let arrayNumerosNeg = [0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
